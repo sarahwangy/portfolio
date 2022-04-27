@@ -1,0 +1,129 @@
+@import '../../global.scss';
+
+.contact {
+    height: 100vh;
+    position: relative;
+
+    .backgro {
+        width: 30px;
+        height: 100%;
+        background-color: $mainColor;
+        position: absolute;
+    }
+
+
+
+    .wrapper {
+        padding: 50px;
+        display: flex;
+
+        .left {
+            flex: 1;
+            // border: 1px solid red;
+
+            .title {
+                font-size: 60px;
+                width: 80%;
+            }
+
+            .info-item {
+                display: flex;
+                align-items: center;
+                margin: 50px 0;
+                font-weight: 300;
+                width: 70%;
+
+                .icon {
+                    width: 50px;
+                    height: 50px;
+                    margin-right: 20px;
+
+                }
+
+            }
+        }
+
+        .right {
+            flex: 1;
+            // border: 1px solid red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            .desc {
+                font-weight: 200;
+
+            }
+
+            form {
+                margin-top: 20px;
+
+
+                input {
+                    width: 50%;
+                    height: 50px;
+                    border: none;
+                    border-bottom: 1px solid black;
+                    margin: 10px 10px;
+                    font-size: 14px;
+                    padding-left: 10px;
+                }
+
+                textarea {
+                    width: 100%;
+                    margin: 10px 10px;
+                    font-size: 14px;
+                    padding-left: 10px;
+                }
+
+                button {
+                    padding: 15px;
+                    border: none;
+                    background-color: $mainColor;
+                    color: white;
+                    font-weight: 600;
+                    cursor: pointer;
+                    border-radius: 10px;
+
+                    // 没反应 focus？?
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+
+            .alert {
+                padding: 20px;
+                border-radius: 10px;
+                background-color: #2196F3;
+                color: white;
+                opacity: 1;
+                transition: opacity 0.6s;
+                margin: 15px;
+
+
+                .closebtn {
+                    margin-left: 30px;
+                    border-radius: 5px;
+
+                    // width: 30px;
+                    // height: 30px;
+                    //    怎么改变大小？
+                    &:hover {
+                        color: gray;
+                    }
+                }
+            }
+
+            // ???
+            .alter-active {
+
+                display: none;
+            }
+
+        }
+    }
+
+
+}

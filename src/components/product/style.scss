@@ -1,0 +1,41 @@
+.pro {
+    width: 30%;
+    height: 40vh;
+    margin: 20px 10px;
+    border: 1px solid gray;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+
+
+    //  scss hover 怎么写。，， 视频47分钟那里？？
+    & :hover {
+        transform: translateY(-100%);
+    }
+
+    .browser {
+        height: 20px;
+        display: flex;
+        align-items: center;
+        background-color: rgb(243, 242, 242);
+        display: flex;
+        align-items: center;
+        position: sticky;
+        z-index: 2;
+
+        .circle {
+            width: 6px;
+            height: 6px;
+            border-radius: 15px;
+            margin: 3px;
+            background-color: white;
+        }
+
+    }
+
+    //  图片出不来？？？
+    a .img {
+        width: 100%;
+        border: 1px solid red;
+        transition: all 10s ease;
+    }
+}

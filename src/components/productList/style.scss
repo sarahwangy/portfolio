@@ -1,0 +1,29 @@
+.plist {
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    // border: 1px solid red;
+    align-items: center;
+    text-align: center;
+
+
+    .texts {
+        width: 65%;
+
+        .title {
+            font-size: 50px;
+            font-weight: 600;
+        }
+
+        .desc {
+            margin: 20px 0;
+        }
+    }
+
+
+    .pl-list {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}

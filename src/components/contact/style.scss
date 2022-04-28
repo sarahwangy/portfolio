@@ -4,6 +4,9 @@
     height: 100vh;
     position: relative;
 
+    //  
+    border: 1px solid red;
+
     .backgro {
         width: 30px;
         height: 100%;
@@ -17,6 +20,11 @@
         padding: 50px;
         display: flex;
 
+        @include mobile {
+            flex-direction: column;
+            padding: 0 50px;
+        }
+
         .left {
             flex: 1;
             // border: 1px solid red;
@@ -24,6 +32,10 @@
             .title {
                 font-size: 60px;
                 width: 80%;
+
+                @include mobile {
+                    font-size: 30px;
+                }
             }
 
             .info-item {
@@ -32,6 +44,11 @@
                 margin: 50px 0;
                 font-weight: 300;
                 width: 70%;
+
+                @include mobile {
+                    margin: 20px 0;
+                    width: 100%;
+                }
 
                 .icon {
                     width: 50px;
@@ -54,10 +71,28 @@
             .desc {
                 font-weight: 200;
 
+                @include mobile {
+                    display: none;
+                }
+
             }
 
             form {
                 margin-top: 20px;
+
+                @include mobile {
+                    margin: 0;
+                    display: flex;
+
+                    // 为什么不规定 direction 了？？
+                    // flex-direction: column;
+                    // align-items: stretch;
+                    // justify-content: ;
+
+                    //  为什么是wrap，不是No wrap？？
+                    flex-wrap: wrap;
+
+                }
 
 
                 input {

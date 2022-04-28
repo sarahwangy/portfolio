@@ -11,7 +11,6 @@ const ProductList = () => {
                 <p className="desc">
                     React has been a very hard mental switch, It took me by surprise and the learning curve was very difficult in the beginning. Today I am more confident in React however there is so much to learn.
 
-                    React has been a very hard mental switch, It took me by surprise and the learning curve was very difficult in the beginning. Today I am more confident in React however there is so much to learn.
                 </p>
 
             </div>

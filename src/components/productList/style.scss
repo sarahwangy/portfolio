@@ -1,3 +1,5 @@
+@import '../../global.scss';
+
 .plist {
     padding: 50px 100px;
     display: flex;
@@ -5,10 +7,20 @@
     // border: 1px solid red;
     align-items: center;
     text-align: center;
+    border: 1px solid red;
+
+    @include mobile {
+        padding: 10px;
+    }
+
 
 
     .texts {
         width: 65%;
+
+        @include mobile {
+            width: 100%;
+        }
 
         .title {
             font-size: 50px;
@@ -17,6 +29,10 @@
 
         .desc {
             margin: 20px 0;
+
+            @include mobile {
+                display: none;
+            }
         }
     }
 

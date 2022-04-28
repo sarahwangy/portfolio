@@ -23,7 +23,6 @@ export default function About() {
                     I also deleted all social media from my phone, this has helped me tremendously to focus and not compare myself to others. Social media is very toxic if you do not know how to use it. It affects your mental state. I only use Twitter on my computer just for updates, networking, and talking to my coding friends. I read LinkedIn has been a huge asset for other developers.
                     My goal is to start applying to jobs by April. I want to finish my project, make sure my other projects are in top shape to put them on the portfolio.
 
-                    I also deleted all social media from my phone, this has helped me tremendously to focus and not compare myself to others. Social media is very toxic if you do not know how to use it. It affects your mental state. I only use Twitter on my computer just for updates, networking, and talking to my coding friends. I read LinkedIn has been a huge asset for other developers.
                 </p>
             </div>
 

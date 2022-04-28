@@ -1,3 +1,5 @@
+@import '../../global.scss';
+
 .pro {
     width: 30%;
     height: 40vh;
@@ -5,6 +7,11 @@
     border: 1px solid gray;
     border-radius: 10px 10px 0 0;
     overflow: hidden;
+
+    @include mobile {
+        width: 40%;
+        height: 20vh;
+    }
 
 
     //  scss hover 怎么写。，， 视频47分钟那里？？

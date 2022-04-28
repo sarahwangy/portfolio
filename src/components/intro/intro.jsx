@@ -6,6 +6,7 @@ export default function Intro() {
         <div className='intro'>
 
 
+            {/* 为什么要用left 和left wrapper，可以只用一个吗。？ */}
             <div className="left">
                 <div className='left-wrapper'>
                     <h2 className='name-intro'>Hello, My name is </h2>
@@ -23,11 +24,9 @@ export default function Intro() {
                     <div className="desc">
                         started this crazy journey on September 1st, 2021. As I write this we are in March of 2022. It's been 6 months and here is my progress so far.
 
-                        I have to say this has been a crazy ride, I doubt myself almost every day but somehow I still manage to push through. Learning a new skill is hard enough when you have a person teaching you however when you are doing it by yourself it's another ball game.
                     </div>
 
                 </div>
-
 
             </div>
             <div className="right">

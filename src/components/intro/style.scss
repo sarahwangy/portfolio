@@ -13,7 +13,6 @@
     .left {
         flex: 1;
 
-
         //  include 放在left 和left-wrapper 为什么有区别呢？？
         // 为什么放在left，结果 left-wrapper padding变成了50px,
         // 因为如果放在left里面，说明在屏幕 480 的时候，对left进行调整，而不是对leftwrapper调整

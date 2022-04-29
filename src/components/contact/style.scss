@@ -3,8 +3,6 @@
 .contact {
     height: 100vh;
     position: relative;
-
-    //  
     border: 1px solid red;
 
     .backgro {
@@ -13,8 +11,6 @@
         background-color: $mainColor;
         position: absolute;
     }
-
-
 
     .wrapper {
         padding: 50px;
@@ -64,9 +60,13 @@
             flex: 1;
             // border: 1px solid red;
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             justify-content: center;
             flex-direction: column;
+
+            @include mobile {
+                align-items: center;
+            }
 
             .desc {
                 font-weight: 200;
@@ -83,15 +83,12 @@
                 @include mobile {
                     margin: 0;
                     display: flex;
-
                     // 为什么不规定 direction 了？？
                     // flex-direction: column;
                     // align-items: stretch;
                     // justify-content: ;
-
                     //  为什么是wrap，不是No wrap？？
                     flex-wrap: wrap;
-
                 }
 
 
@@ -112,6 +109,15 @@
                     padding-left: 10px;
                 }
 
+                // https: //blog.csdn.net/TalonZhang/article/details/84261950#:~:text=%E8%BD%AE%E5%BB%93%EF%BC%88outline%EF%BC%89%E4%B8%8E%E8%BE%B9%E6%A1%86%EF%BC%88,%E7%94%B1blur%20%E8%80%8C%E8%87%AA%E5%8A%A8%E6%B6%88%E5%A4%B1%E3%80%82
+
+                // https: //www.jianshu.com/p/52f5006efe19
+                // :active 向被激活的元素添加样式。
+                // :focus 向拥有键盘输入焦点的元素添加样式。
+                // :hover 当鼠标悬浮在元素上方时，向元素添加样式。
+                // :link 向未被访问的链接添加样式。
+                // :visited 向已被访问的链接添加样式。
+
                 button {
                     padding: 15px;
                     border: none;
@@ -122,28 +128,42 @@
                     border-radius: 10px;
 
                     // 没反应 focus？?
-                    &:focus {
-                        outline: none;
-                    }
+                    // &:focus {
+                    //     outline: none;
+                    // }
                 }
             }
 
             .alert {
-                padding: 20px;
+                display: flex;
+                justify-content: flex-start;
+                padding: 10px 20px;
                 border-radius: 10px;
                 background-color: #2196F3;
                 color: white;
                 opacity: 1;
                 transition: opacity 0.6s;
-                margin: 15px;
+                margin: 10px 0;
 
+                @include mobile {
+                    align-items: center;
+                }
 
                 .closebtn {
-                    margin-left: 30px;
-                    border-radius: 5px;
+                    margin: 0 0;
+                    margin-left: 15px;
+                    padding: 0;
+                    border-radius: 50%;
 
-                    // width: 30px;
-                    // height: 30px;
+                    width: 30px;
+                    height: 30px;
+                    line-height: 30px;
+                    font-size: 30px;
+
+                    &> {
+                        padding: 2px;
+                    }
+
                     //    怎么改变大小？
                     &:hover {
                         color: gray;
@@ -159,6 +179,4 @@
 
         }
     }
-
-
 }

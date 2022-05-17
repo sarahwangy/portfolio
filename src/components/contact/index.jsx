@@ -26,22 +26,26 @@ const Contact = () => {
 
   return (
     <div className="contact">
-      <div className="backgro"></div>
+      {/* <div className="backgro"></div> */}
       <div className="wrapper">
         <div className="left">
-          <h1 className="title"> let us contact</h1>
+          <h1 className="title"> Let US Contact</h1>
+          <div style={{ fontStyle: "italic" }}>
+            Click my email address or send message and click 'submit' button
+          </div>
           <div className="info">
-            <div className="info-item">
+            {/* <div className="info-item">
               <img src={Phone} alt="" className="icon" />
-              +0460 297 888
-            </div>
+              +0460 297 889
+            </div> */}
+
             <div className="info-item">
               <img src={Email} alt="" className="icon" />
-              sarahwangdk@gmail.com
+              <a href="mailto:sarahwangdk@gmail.com">sarahwangdk@gmail.com</a>
             </div>
             <div className="info-item">
               <img src={Address} alt="" className="icon" />
-              melbourne, vic
+              Melbourne, VIC
             </div>
           </div>
         </div>

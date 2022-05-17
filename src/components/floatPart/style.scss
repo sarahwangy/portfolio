@@ -1,0 +1,20 @@
+.floating {
+  display: flex;
+  justify-content: space-around;
+  background: white;
+  box-shadow: 0 1px lightgray;
+  border: 1px solid lightblue;
+  border-radius: 17px;
+  align-items: center;
+  padding: 10px;
+  height: 4.5rem;
+
+  img {
+    transform: scale(0.4);
+  }
+
+  span {
+    font-size: 16px;
+    margin-right: 15px;
+  }
+}

@@ -1,5 +1,6 @@
 import "./style.scss";
 import Photo from "../../assets/img/me.jpeg";
+import { Link } from "react-router-dom";
 
 export default function Intro() {
   return (
@@ -19,14 +20,22 @@ export default function Intro() {
             </div>
           </div>
           <div className="desc">
-            started this crazy journey on September 1st, 2021. As I write this we are in March of
-            2022. It's been 6 months and here is my progress so far.
+            I’m a full-stack developer specializing in building creative websites. Currently, I’m
+            focused on building responsive full-stack web applications.
+          </div>
+          <div className="button-intro">
+            <Link to={`/contact`}>
+              <button> Hire Me</button>
+            </Link>
+            <Link to={`/about`}>
+              <button> Learn More</button>
+            </Link>
           </div>
         </div>
       </div>
       <div className="right">
         {/* <div className="backg"></div> */}
-        <img src={Photo} alt="" className="img" />
+        <img src={Photo} alt="photo" className="img" />
       </div>
     </div>
   );

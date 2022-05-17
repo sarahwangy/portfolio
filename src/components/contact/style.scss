@@ -1,10 +1,9 @@
 @import "../../global.scss";
 
 .contact {
-  height: 100vh;
-  position: relative;
+  height: calc(120vh - 70px);
+  // position: relative;
   border: 1px solid red;
-  margin-top: 100px;
 
   .backgro {
     width: 30px;
@@ -25,10 +24,12 @@
     .left {
       flex: 1;
       // border: 1px solid red;
+      margin-left: 50px;
 
       .title {
         font-size: 40px;
         width: 80%;
+        margin-bottom: 15px;
 
         @include mobile {
           font-size: 30px;

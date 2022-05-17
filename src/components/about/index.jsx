@@ -1,5 +1,5 @@
 import "./style.scss";
-import Team from "../../img/code2.png";
+import Team from "../../assets/img/code2.png";
 
 export default function About() {
   return (

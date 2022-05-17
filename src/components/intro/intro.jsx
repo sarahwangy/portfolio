@@ -1,5 +1,5 @@
 import "./style.scss";
-import Photo from "../../img/photo.png";
+import Photo from "../../assets/img/me.jpeg";
 
 export default function Intro() {
   return (
@@ -11,11 +11,11 @@ export default function Intro() {
           <h1 className="name">Sarah </h1>
           <div className="title">
             <div className="title-wrapper">
-              <div className="title-item">Web Developer</div>
-              <div className="title-item">Content Creator</div>
-              <div className="title-item">Code Designer</div>
-              <div className="title-item">Writer</div>
-              <div className="title-item">Life Lover </div>
+              <div className="title-item">Ethusiastic Dev ❤️ </div>
+              <div className="title-item">Content Creator ✍🏻 </div>
+              <div className="title-item">MERN Stack Dev 💻 </div>
+              <div className="title-item">Cross Platform Dev 📱 </div>
+              <div className="title-item">Life Lover 🌏 </div>
             </div>
           </div>
           <div className="desc">
@@ -25,7 +25,7 @@ export default function Intro() {
         </div>
       </div>
       <div className="right">
-        <div className="backg"></div>
+        {/* <div className="backg"></div> */}
         <img src={Photo} alt="" className="img" />
       </div>
     </div>

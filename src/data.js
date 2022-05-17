@@ -1,4 +1,4 @@
-import CodeImg from "./img/code.jpeg";
+import CodeImg from "./assets/img/code.jpeg";
 
 export const products = [
   {

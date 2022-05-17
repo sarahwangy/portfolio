@@ -1,10 +1,10 @@
 import { useRef, useState } from "react";
 
 import "./style.scss";
-import Phone from "../../img/phone.png";
-import Email from "../../img/email.jpeg";
+import Phone from "../../assets/img/phone.png";
+import Email from "../../assets/img/email.jpeg";
 
-import Address from "../../img/address.png";
+import Address from "../../assets/img/address.png";
 
 import { useContext } from "react";
 import { ThemeContext } from "../../context";

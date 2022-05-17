@@ -1,182 +1,180 @@
-@import '../../global.scss';
+@import "../../global.scss";
 
 .contact {
-    height: 100vh;
-    position: relative;
-    border: 1px solid red;
+  height: 100vh;
+  position: relative;
+  border: 1px solid red;
+  margin-top: 100px;
 
-    .backgro {
-        width: 30px;
-        height: 100%;
-        background-color: $mainColor;
-        position: absolute;
+  .backgro {
+    width: 30px;
+    height: 100%;
+    background-color: $mainColor;
+    position: absolute;
+  }
+
+  .wrapper {
+    padding: 50px;
+    display: flex;
+
+    @include mobile {
+      flex-direction: column;
+      padding: 0 50px;
     }
 
-    .wrapper {
-        padding: 50px;
-        display: flex;
+    .left {
+      flex: 1;
+      // border: 1px solid red;
+
+      .title {
+        font-size: 40px;
+        width: 80%;
 
         @include mobile {
-            flex-direction: column;
-            padding: 0 50px;
+          font-size: 30px;
+        }
+      }
+
+      .info-item {
+        display: flex;
+        align-items: center;
+        margin: 50px 0;
+        font-weight: 300;
+        width: 70%;
+
+        @include mobile {
+          margin: 20px 0;
+          width: 100%;
         }
 
-        .left {
-            flex: 1;
-            // border: 1px solid red;
-
-            .title {
-                font-size: 60px;
-                width: 80%;
-
-                @include mobile {
-                    font-size: 30px;
-                }
-            }
-
-            .info-item {
-                display: flex;
-                align-items: center;
-                margin: 50px 0;
-                font-weight: 300;
-                width: 70%;
-
-                @include mobile {
-                    margin: 20px 0;
-                    width: 100%;
-                }
-
-                .icon {
-                    width: 50px;
-                    height: 50px;
-                    margin-right: 20px;
-
-                }
-
-            }
+        .icon {
+          width: 50px;
+          height: 50px;
+          margin-right: 20px;
         }
-
-        .right {
-            flex: 1;
-            // border: 1px solid red;
-            display: flex;
-            align-items: flex-start;
-            justify-content: center;
-            flex-direction: column;
-
-            @include mobile {
-                align-items: center;
-            }
-
-            .desc {
-                font-weight: 200;
-
-                @include mobile {
-                    display: none;
-                }
-
-            }
-
-            form {
-                margin-top: 20px;
-
-                @include mobile {
-                    margin: 0;
-                    display: flex;
-                    // 为什么不规定 direction 了？？
-                    // flex-direction: column;
-                    // align-items: stretch;
-                    // justify-content: ;
-                    //  为什么是wrap，不是No wrap？？
-                    flex-wrap: wrap;
-                }
-
-
-                input {
-                    width: 50%;
-                    height: 50px;
-                    border: none;
-                    border-bottom: 1px solid black;
-                    margin: 10px 10px;
-                    font-size: 14px;
-                    padding-left: 10px;
-                }
-
-                textarea {
-                    width: 100%;
-                    margin: 10px 10px;
-                    font-size: 14px;
-                    padding-left: 10px;
-                }
-
-                // https: //blog.csdn.net/TalonZhang/article/details/84261950#:~:text=%E8%BD%AE%E5%BB%93%EF%BC%88outline%EF%BC%89%E4%B8%8E%E8%BE%B9%E6%A1%86%EF%BC%88,%E7%94%B1blur%20%E8%80%8C%E8%87%AA%E5%8A%A8%E6%B6%88%E5%A4%B1%E3%80%82
-
-                // https: //www.jianshu.com/p/52f5006efe19
-                // :active 向被激活的元素添加样式。
-                // :focus 向拥有键盘输入焦点的元素添加样式。
-                // :hover 当鼠标悬浮在元素上方时，向元素添加样式。
-                // :link 向未被访问的链接添加样式。
-                // :visited 向已被访问的链接添加样式。
-
-                button {
-                    padding: 15px;
-                    border: none;
-                    background-color: $mainColor;
-                    color: white;
-                    font-weight: 600;
-                    cursor: pointer;
-                    border-radius: 10px;
-
-                    // 没反应 focus？?
-                    // &:focus {
-                    //     outline: none;
-                    // }
-                }
-            }
-
-            .alert {
-                display: flex;
-                justify-content: flex-start;
-                padding: 10px 20px;
-                border-radius: 10px;
-                background-color: #2196F3;
-                color: white;
-                opacity: 1;
-                transition: opacity 0.6s;
-                margin: 10px 0;
-
-                @include mobile {
-                    align-items: center;
-                }
-
-                .closebtn {
-                    margin: 0 0;
-                    margin-left: 15px;
-                    padding: 0;
-                    border-radius: 50%;
-
-                    width: 30px;
-                    height: 30px;
-                    line-height: 30px;
-                    font-size: 30px;
-
-                    &> {
-                        padding: 2px;
-                    }
-
-                    //    怎么改变大小？
-                    &:hover {
-                        color: gray;
-                    }
-                }
-            }
-
-            // ???
-            .alter-active {
-
-                display: none;
-            }
-
-        }
+      }
     }
+
+    .right {
+      flex: 1;
+      // border: 1px solid red;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+
+      @include mobile {
+        align-items: center;
+      }
+
+      .desc {
+        font-weight: 200;
+
+        @include mobile {
+          display: none;
+        }
+      }
+
+      form {
+        margin-top: 20px;
+
+        @include mobile {
+          margin: 0;
+          display: flex;
+          // 为什么不规定 direction 了？？
+          // flex-direction: column;
+          // align-items: stretch;
+          // justify-content: ;
+          //  为什么是wrap，不是No wrap？？
+          flex-wrap: wrap;
+        }
+
+        input {
+          width: 50%;
+          height: 50px;
+          border: 1px solid black;
+          // border-bottom: 1px solid black;
+          margin: 10px 10px;
+          font-size: 14px;
+          padding-left: 10px;
+          border-radius: 10px;
+        }
+
+        textarea {
+          width: 100%;
+          margin: 10px 10px;
+          font-size: 14px;
+          padding-left: 10px;
+          border: 1px solid black;
+          border-radius: 10px;
+        }
+
+        // https: //blog.csdn.net/TalonZhang/article/details/84261950#:~:text=%E8%BD%AE%E5%BB%93%EF%BC%88outline%EF%BC%89%E4%B8%8E%E8%BE%B9%E6%A1%86%EF%BC%88,%E7%94%B1blur%20%E8%80%8C%E8%87%AA%E5%8A%A8%E6%B6%88%E5%A4%B1%E3%80%82
+
+        // https: //www.jianshu.com/p/52f5006efe19
+        // :active 向被激活的元素添加样式。
+        // :focus 向拥有键盘输入焦点的元素添加样式。
+        // :hover 当鼠标悬浮在元素上方时，向元素添加样式。
+        // :link 向未被访问的链接添加样式。
+        // :visited 向已被访问的链接添加样式。
+
+        button {
+          padding: 15px;
+          border: none;
+          background-color: $mainColor;
+          color: white;
+          font-weight: 600;
+          cursor: pointer;
+          border-radius: 10px;
+
+          // 没反应 focus？?
+          // &:focus {
+          //     outline: none;
+          // }
+        }
+      }
+
+      .alert {
+        display: flex;
+        justify-content: flex-start;
+        padding: 10px 20px;
+        border-radius: 10px;
+        background-color: #2196f3;
+        color: white;
+        opacity: 1;
+        transition: opacity 0.6s;
+        margin: 10px 0;
+
+        @include mobile {
+          align-items: center;
+        }
+
+        .closebtn {
+          margin: 0 0;
+          margin-left: 15px;
+          padding: 0;
+          border-radius: 50%;
+
+          width: 30px;
+          height: 30px;
+          line-height: 30px;
+          font-size: 30px;
+
+          & > {
+            padding: 2px;
+          }
+
+          //    怎么改变大小？
+          &:hover {
+            color: gray;
+          }
+        }
+      }
+
+      // ???不用display none，直接把message 设空，就可以不显示了
+      .alter-active {
+        display: none;
+      }
+    }
+  }
 }

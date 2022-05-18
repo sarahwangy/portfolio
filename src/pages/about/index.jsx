@@ -38,14 +38,30 @@ export default function About() {
           </p>
           <p className="desc">
             My name is Sarah, and I'm a self-taught web developer and I accepted
-            <b style={{ color: "green" }}>
+            <b
+              style={{
+                color: "green",
+                border: "1px solid green",
+                borderRadius: "5px",
+                margin: "10px",
+                padding: "5px",
+                backgroundColor: "lightgray",
+              }}
+            >
               <a href="https://twitter.com/search?q=%23100daysofcodechallenge&src=typeahead_click">
                 #100DaysOfCodeChallenge
               </a>{" "}
             </b>{" "}
             in{" "}
             <a
-              style={{ color: "green", fontWeight: "500" }}
+              style={{
+                color: "green",
+                border: "1px solid green",
+                borderRadius: "5px",
+                margin: "10px",
+                padding: "5px",
+                backgroundColor: "lightgray",
+              }}
               href="https://twitter.com/happySarahss"
             >
               Twitter
@@ -54,15 +70,15 @@ export default function About() {
             day. I used Twitter on my computer just for updates, networking, and talking to my
             coding friends. I read LinkedIn has been a huge asset for other developers.
             <p className="desc">
-              My journey into web development is fascinating; let's say the travel wasn't a direct
-              route. I would like to build creative websites and bring business values to
-              stakeholders.
+              My journey into web development is fascinating. I would like to build creative
+              websites and bring business values to stakeholders.
             </p>
             My goal is to start applying to jobs by April. I want to finish my project, make sure my
             other projects are in top shape to put them on the portfolio.
             <p className="desc">
-              <b style={{ color: "green", fontSize: "18px" }}>
-                I believe my dream of becoming an aswsome software developer will come true soon! ❤️
+              <b style={{ color: "green", fontSize: "18px", textDecoration: "underline" }}>
+                ❤️ I believe my dream of becoming an aswsome software developer will come true soon!
+                ❤️
               </b>
             </p>
           </p>

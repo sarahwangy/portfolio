@@ -4,7 +4,8 @@
   height: calc(120vh - 70px);
   display: flex;
   align-items: center;
-  border: 1px solid red;
+  // border: 1px solid red;
+  padding-top: 50px;
 
   @include mobile {
     flex-direction: column;
@@ -66,6 +67,8 @@
   .right {
     flex: 1;
     // border: 1px solid red;
+    margin-top: -173px;
+    line-height: 30px;
 
     @include mobile {
       padding: 20px;
@@ -81,6 +84,7 @@
 
     .desc {
       font-weight: 300;
+      margin-bottom: 15px;
     }
   }
 }

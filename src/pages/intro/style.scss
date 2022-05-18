@@ -3,7 +3,8 @@
 .intro {
   display: flex;
   height: calc(120vh - 70px);
-  border: 1px solid red;
+  padding-top: 100px;
+  // border: 1px solid red;
 
   @include mobile {
     flex-direction: column;
@@ -33,7 +34,7 @@
       }
 
       .desc {
-        border: 1px solid red;
+        // border: 1px solid red;
         // padding-top: 10px;
         @include mobile {
           display: none;

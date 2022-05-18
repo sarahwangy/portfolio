@@ -3,7 +3,6 @@ import About from "./pages/about";
 import ProductList from "./pages/productList";
 import Contact from "./pages/contact";
 import Toggle from "./components/toggle";
-import Menu from "./components/menu";
 import Topbar from "./components/topBar";
 import Skills from "./pages/skill";
 import React, { Component, lazy, Suspense } from "react";
@@ -26,7 +25,6 @@ function App() {
         >
           {/* <Toggle /> */}
           <Topbar />
-          <Menu />
 
           <Routes>
             <Route path="/" element={<Intro />} />

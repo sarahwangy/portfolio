@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 
 import "./style.scss";
+
 import Phone from "../../assets/img/phone.png";
 import Email from "../../assets/img/email.jpeg";
 
@@ -31,7 +32,7 @@ const Contact = () => {
         <div className="left">
           <h1 className="title"> Let US Contact</h1>
           <div style={{ fontStyle: "italic" }}>
-            Click my email address or send message and click 'submit' button
+            Click my email address or send message and click 'submit' button👇
           </div>
           <div className="info">
             {/* <div className="info-item">
@@ -51,9 +52,13 @@ const Contact = () => {
         </div>
 
         <div className="right">
-          <p className="desc">
-            <b> what is your story?</b>I am not saying Twitter is not a powerful tool, last week I
-            got connected to so many people from Automattic it's not even funny
+          <p
+            style={{ fontSize: "20px", display: "flex", flexDirection: "column", gap: "10px" }}
+            className="desc"
+          >
+            <b> what is your story?</b>👋 I am self-taught web developer, and I would like to share
+            skills and exprience to help people to shift into tech industry and be an awesome
+            programmer!
           </p>
           <form ref={formRef} onSubmit={handleSubmit}>
             <input

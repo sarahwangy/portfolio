@@ -16,7 +16,6 @@ export default function Topbar() {
       style={{
         backgroundColor: darkMode ? "#222" : "white",
         color: darkMode && "white",
-        border: "1px solid red",
       }}
       className="topbar "
     >

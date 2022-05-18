@@ -7,8 +7,9 @@
   // border: 1px solid red;
   align-items: center;
   text-align: center;
-  border: 1px solid red;
+  // border: 1px solid red;
   height: calc(120vh - 70px);
+  padding-top: 100px;
 
   @include mobile {
     padding: 10px;

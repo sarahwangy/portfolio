@@ -8,8 +8,8 @@
   position: fixed;
   top: 0;
   z-index: 3;
-  transition: all 1s ease;
-  border: 1px solid black;
+  // transition: all 5s ease;
+  // border: 1px solid green;
   padding-bottom: 10px;
 
   .wrapper {
@@ -25,6 +25,13 @@
       align-items: center;
       justify-content: space-between;
 
+      img {
+        &:hover {
+          transform: scale(1.2);
+          transform: rotate(180deg);
+        }
+      }
+
       //   .logo {
       //     font-size: 40px;
       //     font-weight: 700;
@@ -37,6 +44,9 @@
         display: flex;
         align-items: center;
         margin-left: 80px;
+        &:hover {
+          transform: scale(1.5);
+        }
 
         @include mobile {
           display: none;

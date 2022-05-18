@@ -6,11 +6,11 @@ const ProductList = () => {
   return (
     <div className="plist">
       <div className="texts">
-        <h1 className="title"> create$ inspire</h1>
+        <h1 className="title"> create & inspire</h1>
         <p className="desc">
-          React has been a very hard mental switch, It took me by surprise and the learning curve
-          was very difficult in the beginning. Today I am more confident in React however there is
-          so much to learn.
+          {/* <b> */}
+          Take a look at some of my projects, which demostrate what I learned and gained recently.
+          {/* </b> */}
         </p>
       </div>
       <div className="pl-list">

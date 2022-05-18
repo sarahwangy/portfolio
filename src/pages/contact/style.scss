@@ -3,7 +3,8 @@
 .contact {
   height: calc(120vh - 70px);
   // position: relative;
-  border: 1px solid red;
+  // border: 1px solid red;
+  padding-top: 100px;
 
   .backgro {
     width: 30px;
@@ -24,7 +25,7 @@
     .left {
       flex: 1;
       // border: 1px solid red;
-      margin-left: 50px;
+      margin-left: 150px;
 
       .title {
         font-size: 40px;
@@ -120,18 +121,33 @@
         // :visited 向已被访问的链接添加样式。
 
         button {
-          padding: 15px;
-          border: none;
-          background-color: $mainColor;
-          color: white;
-          font-weight: 600;
-          cursor: pointer;
-          border-radius: 10px;
+          // padding: 15px;
+          // border: none;
+          // background-color: $mainColor;
+          // color: white;
+          // font-weight: 600;
+          // cursor: pointer;
+          // border-radius: 10px;
 
           // 没反应 focus？?
           // &:focus {
           //     outline: none;
           // }
+
+          border: 1px solid gray;
+          border-radius: 10px;
+          padding: 10px;
+          font-size: 20px;
+          background-color: $mainColor;
+          cursor: pointer;
+          margin: 20px;
+          color: white;
+
+          &:hover {
+            background-color: white;
+            color: $mainColor;
+            transform: scale(1.05);
+          }
         }
       }
 

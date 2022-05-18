@@ -20,8 +20,10 @@ export default function Intro() {
             </div>
           </div>
           <div className="desc">
-            I’m a full-stack developer specializing in building creative websites. Currently, I’m
-            focused on building responsive full-stack web applications.
+            I’m a full-stack developer specializing in building creative websites.
+            <div className="desc">
+              Currently, I’m focused on building responsive full-stack web applications.
+            </div>
           </div>
           <div className="button-intro">
             <Link to={`/contact`}>

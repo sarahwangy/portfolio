@@ -22,7 +22,7 @@ const Skills = () => {
         style={{
           backgroundColor: darkMode ? "#222" : "white",
           color: darkMode && "white",
-          border: "1px solid red",
+          // border: "1px solid red",
           height: "calc(120vh - 70px)",
         }}
       >

@@ -1,5 +1,5 @@
 import "./style.scss";
-import Product from "../product";
+import Product from "../../components/product";
 import { products } from "../../data";
 
 const ProductList = () => {

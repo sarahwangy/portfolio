@@ -1,0 +1,43 @@
+@import "../../global.scss";
+
+.plist {
+  padding: 50px 100px;
+  display: flex;
+  flex-direction: column;
+  // border: 1px solid red;
+  align-items: center;
+  text-align: center;
+  border: 1px solid red;
+  height: calc(120vh - 70px);
+
+  @include mobile {
+    padding: 10px;
+  }
+
+  .texts {
+    width: 65%;
+
+    @include mobile {
+      width: 100%;
+    }
+
+    .title {
+      font-size: 50px;
+      font-weight: 600;
+    }
+
+    .desc {
+      margin: 20px 0;
+
+      @include mobile {
+        display: none;
+      }
+    }
+  }
+
+  .pl-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}

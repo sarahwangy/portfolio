@@ -23,6 +23,7 @@ const Skills = () => {
           backgroundColor: darkMode ? "#222" : "white",
           color: darkMode && "white",
           border: "1px solid red",
+          height: "calc(120vh - 70px)",
         }}
       >
         <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">

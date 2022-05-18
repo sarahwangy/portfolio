@@ -6,6 +6,7 @@ import { BsFillPersonLinesFill, BsTwitter } from "react-icons/bs";
 import Logo from "../../assets/img/logo-1.png";
 import { useContext } from "react";
 import { ThemeContext } from "../../context";
+import Toggle from "../toggle";
 
 export default function Topbar() {
   const theme = useContext(ThemeContext);
@@ -17,7 +18,7 @@ export default function Topbar() {
         color: darkMode && "white",
         border: "1px solid red",
       }}
-      className={"topbar "}
+      className="topbar "
     >
       <div className="wrapper">
         <div className="left">
@@ -53,13 +54,14 @@ export default function Topbar() {
             </div>
           </Link>
         </div>
-        {/* <div className="right">
-          <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+        <div className="right">
+          {/* <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
             <span className="line1"></span>
             <span className="line2"></span>
             <span className="line3"></span>
-          </div>
-        </div> */}
+          </div> */}
+          <Toggle />
+        </div>
       </div>
 
       {/* Social icons */}

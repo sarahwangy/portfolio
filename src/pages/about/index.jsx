@@ -1,6 +1,6 @@
 import "./style.scss";
 import Team from "../../assets/img/code2.png";
-import FloatPart from "../floatPart";
+import FloatPart from "../../components/floatPart";
 import Crown from "../../assets/img/crown.png";
 import ThumbUp from "../../assets/img/thumbup.png";
 import { motion } from "framer-motion";

@@ -1,11 +1,11 @@
-import Intro from "./components/intro/intro";
-import About from "./components/about";
-import ProductList from "./components/productList";
-import Contact from "./components/contact";
+import Intro from "./pages/intro";
+import About from "./pages/about";
+import ProductList from "./pages/productList";
+import Contact from "./pages/contact";
 import Toggle from "./components/toggle";
 import Menu from "./components/menu";
 import Topbar from "./components/topBar";
-import Skills from "./components/skill";
+import Skills from "./pages/skill";
 import React, { Component, lazy, Suspense } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
@@ -24,7 +24,7 @@ function App() {
           style={{ backgroundColor: darkMode ? "#222" : "white", color: darkMode && "white" }}
           className="App"
         >
-          <Toggle />
+          {/* <Toggle /> */}
           <Topbar />
           <Menu />
 

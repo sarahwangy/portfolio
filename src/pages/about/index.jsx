@@ -38,7 +38,12 @@ export default function About() {
           </p>
           <p className="desc">
             My name is Sarah, and I'm a self-taught web developer and I accepted
-            <b style={{ color: "green" }}> #100DaysOfCodeChallenge </b> in{" "}
+            <b style={{ color: "green" }}>
+              <a href="https://twitter.com/search?q=%23100daysofcodechallenge&src=typeahead_click">
+                #100DaysOfCodeChallenge
+              </a>{" "}
+            </b>{" "}
+            in{" "}
             <a
               style={{ color: "green", fontWeight: "500" }}
               href="https://twitter.com/happySarahss"
@@ -57,7 +62,7 @@ export default function About() {
             other projects are in top shape to put them on the portfolio.
             <p className="desc">
               <b style={{ color: "green", fontSize: "18px" }}>
-                I believe my dream of becoming an aswsome software developer will come true soon!❤️
+                I believe my dream of becoming an aswsome software developer will come true soon! ❤️
               </b>
             </p>
           </p>
